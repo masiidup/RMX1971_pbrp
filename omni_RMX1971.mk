@@ -26,7 +26,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 PRODUCT_DEVICE := RMX1971
 PRODUCT_NAME := omni_RMX1971
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := RMX1971
+PRODUCT_MODEL :=  5 Pro
 PRODUCT_MANUFACTURER := Realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -37,3 +37,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
+	
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
+    ro.product.device

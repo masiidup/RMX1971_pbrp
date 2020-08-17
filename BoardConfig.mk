@@ -57,7 +57,7 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 #TARGET_USE_SDCLANG := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX1971
+TARGET_OTA_ASSERT_DEVICE := RMX1971, RMX1971CN
 
 # Avb
 BOARD_AVB_ENABLE := true
@@ -97,6 +97,10 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION := true
+
+#Init
+TARGET_INIT_VENDOR_LIB := libinit_RMX1971
+TARGET_RECOVERY_DEVICE_MODULES := libinit_RMX1971
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
